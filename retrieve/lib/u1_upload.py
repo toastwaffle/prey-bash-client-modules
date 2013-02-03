@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 #############################################
 # Prey Ubuntu One API
 # By Tomas Pollak - (c) 2011 Fork Ltd.

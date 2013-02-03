@@ -206,7 +206,7 @@ get_last_bucket_in_s3(){
 
 upload_to_ubuntu_one(){
 
-	[ -z "$(which python)" ] && log " -- Python interpreter not found! Cannot continue." && return 1
+	[ -z "$(which python2)" ] && log " -- Python interpreter not found! Cannot continue." && return 1
 
 	local file_to_upload="$1"
 	local credentials_file='credentialfile.txt'
@@ -236,7 +236,7 @@ upload_to_ubuntu_one(){
 
 	fi
 
-	python "${module_path}/lib/u1_upload.py" "$file_to_upload"
+	python2 "${module_path}/lib/u1_upload.py" "$file_to_upload"
 	rs=$?
 
 	rm -f "$credentials_file"
